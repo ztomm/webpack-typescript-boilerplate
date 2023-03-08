@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name='nonce', content=nonce)
+		
+		title #{title}
+
+		link(rel='shortcut icon', href='/favicon.ico')
+
+		script(nonce=nonce). 
+			document.cookie = 'screen=' + ('devicePixelRatio' in window ? devicePixelRatio : 1) + ',' + window.innerWidth + '; path=/; SameSite=strict; Secure';
+
+		link(href='/css/style.css', rel='stylesheet')
+		script(src='/lib/jquery/jquery.min.js')
+		script(src='/js/script.js')
+
+	body
+
+		#app
+		
+			include ../server/views/partials/header
+
+			main
+			
+				block content

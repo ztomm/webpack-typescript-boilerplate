@@ -1,0 +1,26 @@
+extends ../../client-build/layout
+
+block content
+
+	section
+		img(src='/media/bird.jpg', alt='')
+
+	section
+		article
+			header
+				h1 Webpack TypeScript Boilerplate
+				p Webpack Typescript Boilerplate: Node.js, Express, Pug, TS, SCSS, jQuery, express-responsive-images
+				hr
+			section
+				h2 Responsive Images
+				p Images scaled and cached by 
+					a(href='https://www.npmjs.com/package/express-responsive-images', target='_blank', title='') express-responsive-images
+				hr
+
+	section
+		article
+			header
+				h2 api example
+			section
+				button.api get api data (via ajax)
+				div.result
