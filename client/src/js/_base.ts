@@ -1,6 +1,9 @@
 import '../css/_base.scss';
 
-import * as $ from "jquery";
+// depending on Node.js/jQuery version:
+// import * as $ from "jquery";
+import $ from "jquery";
+(window as any).$ = $; // comment out if possible
 
 import Utils from './utils';
 import Page from './page';
