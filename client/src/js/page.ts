@@ -1,3 +1,10 @@
+// depending on Node.js/jQuery version:
+// import $ from "jquery";
+// or
+// import * as $ from "jquery";
+// or this way
+const $ = (window as any).$;
+
 export default class Page {
 
 	constructor() {

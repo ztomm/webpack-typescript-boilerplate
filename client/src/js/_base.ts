@@ -1,12 +1,13 @@
 import '../css/_base.scss';
 
 // depending on Node.js/jQuery version:
-// import * as $ from "jquery";
 import $ from "jquery";
-(window as any).$ = $; // comment out if possible
+// import * as $ from "jquery";
 
 import Utils from './utils';
 import Page from './page';
+
+(window as any).$ = $;
 
 window.onload = function () {
 
